@@ -57,12 +57,12 @@ POST /users/:userId/calendar/holidays
 
 4. Выполняем миграции (если есть):  
   
-npx prisma migrate deploy  
+- npx prisma migrate deploy  
 
 
 5. Запускаем локально в режиме разработки:  
 
-npm run start:dev  
+- npm run start:dev  
 
 
 Приложение будет доступно по: http://localhost:5000  
@@ -118,6 +118,7 @@ DATABASE_URL="postgresql://postgres:postgres@db:5432/country_db?schema=public"
 - npm run start:prod – запуск продакшн версии
 
 - 
+
 
 
 
