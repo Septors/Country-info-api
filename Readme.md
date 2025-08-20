@@ -1,4 +1,4 @@
-Country & User Calendar API
+# Country & User Calendar API #
 
 REST API на NestJS для работы с информацией о странах и пользовательскими календарями с праздниками.
 
@@ -112,5 +112,6 @@ NODE_ENV=development
 npm run start:dev – запуск в режиме разработки
 
 npm run build – сборка проекта
+
 
 npm run start:prod – запуск продакшн версии
