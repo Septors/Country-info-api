@@ -18,9 +18,9 @@
 
 POST /users/create  
 
-{
-  "email": "user@example.com"  
-}
+{  
+  "email": "user@example.com"    
+}  
 
 ### Получение календаря пользователя  
 
@@ -118,6 +118,7 @@ DATABASE_URL="postgresql://postgres:postgres@db:5432/country_db?schema=public"
 - npm run start:prod – запуск продакшн версии
 
 - 
+
 
 
 
