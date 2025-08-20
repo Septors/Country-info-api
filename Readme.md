@@ -67,7 +67,7 @@ POST /users/:userId/calendar/holidays
 
 Приложение будет доступно по: http://localhost:5000  
 
-## Запуск через Docker  
+## Запуск через Docker: 
 
 1. Сборка контейнера:  
 
@@ -109,7 +109,7 @@ DATABASE_URL – строка подключения к PostgreSQL
 DATABASE_URL="postgresql://postgres:postgres@db:5432/country_db?schema=public"  
 
 
-# Полезные команды #
+# Полезные команды: #
 
 - npm run start:dev – запуск в режиме разработки  
 
@@ -118,6 +118,7 @@ DATABASE_URL="postgresql://postgres:postgres@db:5432/country_db?schema=public"
 - npm run start:prod – запуск продакшн версии
 
 - 
+
 
 
 
