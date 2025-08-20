@@ -1,20 +1,20 @@
 # Country & User Calendar API #  
 
-### REST API на NestJS для работы с информацией о странах и пользовательским календарём с праздниками. ###  
+### REST API on NestJS for working with country information and a custom calendar with holidays. ###  
 
-## Функции:
+## Functions:
 
 # Country:  
-### Получение списка доступных стран:  
+### Getting a list of available countries:  
 -GET /countries  
 
-### Получение информации о стране по коду:  
+### Getting country information by code:  
 
 -GET /countries/:countryCode  
 
 ## User  
 
-### Создание пользователя  
+### Creating a user  
 
 POST /users/create  
 
@@ -22,11 +22,11 @@ POST /users/create
   "email": "user@example.com"    
 }  
 
-### Получение календаря пользователя  
+### Getting a user's calendar  
 
 -GET /users/:userId/calendar  
 
-### Добавление праздников в календарь пользователя  
+### Adding holidays to a user's calendar  
 
 POST /users/:userId/calendar/holidays  
 
@@ -38,58 +38,58 @@ POST /users/:userId/calendar/holidays
   ]  
 }  
 
-## Установка и запуск локально:  
+## Install and run locally:  
 
-1. Клонируем репозиторий:  
+1. Clone the repository:  
 
 - git clone https://github.com/Septors/Country-info-api.git 
 - cd Country-info-api  
 
 
- 2. Устанавливаем зависимости:  
+ 2. Installing dependencies:  
 
 - npm install  
 
 
-3. Генерируем Prisma Client:  
+3. Generating Prisma Client:  
 
 -npx prisma generate  
 
-4. Выполняем миграции (если есть):  
+4. Perform migrations (if any):  
   
 - npx prisma migrate deploy  
 
 
-5. Запускаем локально в режиме разработки:  
+5. Run locally in development mode:  
 
 - npm run start:dev  
 
 
-Приложение будет доступно по: http://localhost:5000  
+The application will be available on: http://localhost:5000  
 
-## Запуск через Docker: 
+## Launch via Docker: 
 
-1. Сборка контейнера:  
+1.Container assembly:  
 
 -docker-compose build  
 
 
-2. Запуск контейнеров:  
+2. Running containers:  
 
 -docker-compose up  
 
 
-## Контейнеры:  ##
+## Containers:  ##
 
-Контейнеры будут доступны по адресам:
+Containers will be available at the following addresses:
 
 API: http://localhost:5000
 
-PostgreSQL: порт 5432
+PostgreSQL: port 5432
 
-При первом запуске убедитесь, что база данных пуста и выполнена генерация Prisma Client.
+On first run, make sure the database is empty and Prisma Client generation is complete.
 
-### Структура проекта  
+### Project structure
 src/  
 ├── country/  
 │   ├── country.controller.ts  
@@ -100,22 +100,23 @@ src/
 ├── calendar/  
 ├── external-api/  
 
-# Переменные окружения #  
+# Environment variables #  
 
-DATABASE_URL – строка подключения к PostgreSQL  
+DATABASE_URL – PostgreSQL connection string  
 
-Пример .env:  
+Example  .env:  
 
 DATABASE_URL="postgresql://postgres:postgres@db:5432/country_db?schema=public"  
 
 
-# Полезные команды: #
+# Useful commands: #
 
-- npm run start:dev – запуск в режиме разработки  
+- npm run start:dev – launch in development mode  
 
-- npm run build – сборка проекта  
+- npm run build – building the project  
 
-- npm run start:prod – запуск продакшн версии
+- npm run start:prod – launch of production version
+
 
 
 
